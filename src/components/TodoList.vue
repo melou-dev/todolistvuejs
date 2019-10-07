@@ -1,6 +1,6 @@
 <template>
     <div>
-        <TodoInputText v-model="newTodoText" />
+        <TodoInputText v-model="newTodoText" @keydown.enter="addTodo" />
         <TodoListItem :todos="todos" />
     </div>
 </template>
@@ -19,6 +19,11 @@ export default {
             newTodoText: "test",
             todos: ["faire les courses", "promener Béné", "travailler"],
         };
+    },
+    methods: {
+        addTodo() {
+            alert("test1");
+        }
     }
 };
 </script>
