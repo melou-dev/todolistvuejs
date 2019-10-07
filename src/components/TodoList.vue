@@ -1,11 +1,17 @@
 <template>
-  <h1>My todo list :</h1>
+    <div>
+        <TodoInputText />
+    </div>
 </template>
 
 <script>
-export default {
+import TodoInputText from '@/components/TodoInputText.vue';
 
-}
+export default {
+    components: {
+        TodoInputText,
+    }
+};
 </script>
 
 <style>
